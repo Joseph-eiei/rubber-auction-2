@@ -1,0 +1,68 @@
+body {
+  font-family: sans-serif;
+  background: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+h1 { margin-bottom: 20px; }
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: auto;
+}
+label {
+  display: block;
+  text-align: left;
+  margin-top: 10px;
+}
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background: #0d1f3c;
+  color: #fff;
+  font-size: 16px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+th, td {
+  border: 1px solid #dee2e6;
+  padding: 8px;
+}
+.logout {
+  position: absolute;
+  top:   20px;
+  right: 20px;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #000;
+}
+.error {
+  color: red;
+  margin-top: 10px;
+}
+.success-message {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}

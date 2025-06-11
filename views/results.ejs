@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>ผลการประมูลยางพารา</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>ผลการประมูลยางพารา</h1>
+  <a href="/logout" class="logout">ออกจากระบบ</a>
+
+  <% if (!date) { %>
+    <p>ยังไม่มีข้อมูลการประมูล</p>
+  <% } else { %>
+    <div class="card">
+      <h2>วันที่: <%= date %></h2>
+      <table>
+        <thead>
+          <tr><th>ลำดับ</th><th>ชื่อ</th><th>ราคา (บาท)</th></tr>
+        </thead>
+        <tbody>
+          <% offers.forEach(o => { %>
+            <tr>
+              <td><%= o.rank %></td>
+              <td><%= o.name %></td>
+              <td><%= o.price %></td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+  <% } %>
+</body>
+</html>
+

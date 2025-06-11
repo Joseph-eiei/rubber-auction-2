@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>ระบบประมูลยางพารา</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>ระบบประมูลยางพารา</h1>
+  <div class="card">
+    <h2>ใส่ราคาประมูลยางพารา</h2>
+    <% if (success) { %>
+      <p class="success-message" style="color: green!;"><%= success %></p>
+    <% } %>
+    <form action="/bid" method="post">
+      <label>ชื่อ</label>
+      <input type="text" name="name" placeholder="กรอกชื่อของคุณ" required>
+      <label>ราคารยาง</label>
+      <input type="number" name="price" step="0.01" placeholder="กรอกราคา (บาท)" required>
+      <button type="submit">ยืนยัน</button>
+    </form>
+  </div>
+</body>
+</html>
+
